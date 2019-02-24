@@ -1,0 +1,80 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap 4 Introduction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="styles/main.css">
+<style>
+.my-row
+{
+border:2px solid red;
+
+}
+.my-col
+{
+border:2px solid blue;
+}
+
+
+.cont {
+
+    height:500px;
+} 
+#profile-bg 
+{
+background-color:#d9d9d9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+	<div class="row my-row">
+		<div class="col my-col">
+		<br/>
+    		<nav id="head-bar">
+        		<a href="home.html">
+            			<font id="font3">&nbsp;GRIZZLY</font>
+            			<img src="images/bear.png" height="35px">
+            			<font id="font3">STORE</font>
+        		</a>
+        		<span id="float-right">
+            		<table >
+                		<tr>
+                    			<td id="td1"><img src="images/notification.png" height="35px"></td>
+                    			<td id="td1"><font id="font3">Welcome  Admin</font></td>
+                    			<td id="td1"><button id="login-btn" class="btn">Logout</button></td>
+                		</tr>
+            		</table>
+        		</span>
+    		</nav>
+    		<hr/>
+		</div>
+	</div>
+	<div class="row justify-content-around my-row ">
+		<div class="coL-md-3 col-sm-0 d-none d-md-block my-col align-items-center cont " id="profile-bg">
+			<br/><p style="background-color:#a6a6a6;color:white;">PROFILE</p>
+			<div class="card">
+  				<img class="card-img-top" src="images/bear.png" height="100px"alt="Card image cap">
+  				<div class="card-body">
+    					<p class="card-text">Helen Cho<br/>ID<br/>GRZLY17234<br/>Designation<br/>Sr. Admin<br/>Office<br/>NYC, NY, USA</p>
+  				</div>
+			</div>
+		</div>
+		<div class="col-md-8 col-sm-12 my-col cont">r1c2</div>
+	</div>
+
+</div>
+                
+           
+        
+</body>
+
+</html>

@@ -1,0 +1,307 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TAB</title>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <script src="styles/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="styles/main.css">
+<style>
+.my-row
+{
+border:2px solid red;
+
+}
+.my-col
+{
+border:2px solid blue;
+}
+
+
+.cont {
+
+    
+    border:2px solid black;
+} 
+section{
+  border:2px solid yellow;
+}
+#profile-bg 
+{
+background-color:#d9d9d9;
+}
+
+
+</style>
+
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light mx-2 my-2"> 
+  <a class="navbar-brand" href="#">GRIZZLY<img src="images/bear.png" width="30" height="30" class="d-inline-block align-top" alt="">STORE</a>   <!--icon-->
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link"><img src="images/notification.png" height="30"></a>
+      </li>
+      <li class="nav-item">
+        <font class="navbar-brand">Welcome admin</font>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-secondary">Logout</button>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+<div class="container-fluid cont" >
+  <div class="row justify-content-around my-row my-5">
+    <div class="col-md-3 col-sm-0 my-col d-none d-md-block "  id="profile-bg">
+      
+      <div class="card">
+        <div class="card-header mt-3" >PROFILE</div>
+          <img class="img-fluid mx-auto my-3" src="images/bear.png" height="100" width="100" alt="Card image cap">
+          <div class="card-body text-center">
+              <p class="card-text">Helen Cho<br/>ID<br/>GRZLY17234<br/>Designation<br/>Sr. Admin<br/>Office<br/>NYC, NY, USA</p>
+          </div>
+      </div>
+    </div>
+    <!--<div class="col-md-8 col-sm-12 my-col">-->
+      <!-- Tabs -->
+        <div id="tabs" class="col-md-8 col-sm-12 my-col px-0">
+  <div class="container-fluid cont">
+    <div class="row my-row justify-content-center">
+      <div class="col-xl-12 my-col" >
+        <section>
+        <nav>
+          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-products-tab" data-toggle="tab" href="#nav-products" role="tab" aria-controls="nav-products" aria-selected="true">PRODUCTS</a>
+            <a class="nav-item nav-link" id="nav-vendors-tab" data-toggle="tab" href="#nav-vendors" role="tab" aria-controls="nav-vendors" aria-selected="false">VENDORS</a>
+            <a class="nav-item nav-link" id="nav-category-tab" data-toggle="tab" href="#nav-category" role="tab" aria-controls="nav-contact" aria-selected="false">CATEGORY</a>
+            
+          </div>
+        </nav>
+        <div class="tab-content py-3 px-3 px-sm-0 mx-3" id="nav-tabContent" style="overflow: scroll;">
+          <div class="tab-pane fade show active" id="nav-products" role="tabpanel" aria-labelledby="nav-products-tab">
+            <button type="button" class="btn btn-secondary">View</button>
+            <button type="button" class="btn btn-secondary">Block</button>
+            <button type="button" class="btn btn-secondary">Remove</button>
+            <table class="my-3">
+              <tr>
+                <th>ProductList</th>
+                <th>Brand</th>
+                <th>Category</th>
+                <th>Rating</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>List1</td>
+                <td>Brand1</td>
+                <td>Category1</td>
+                <td>rating1</td>
+                <td>
+                  <button type="button" class="btn btn-secondary">View</button>
+                  <button type="button" class="btn btn-secondary">Block</button>
+                  <button type="button" class="btn btn-secondary">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>List2</td>
+                <td>Brand2</td>
+                <td>Category2</td>
+                <td>rating2</td>
+                <td>
+                  <button type="button" class="btn btn-secondary">View</button>
+                  <button type="button" class="btn btn-secondary">Block</button>
+                  <button type="button" class="btn btn-secondary">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>List3</td>
+                <td>Brand3</td>
+                <td>Category3</td>
+                <td>rating3</td>
+                <td>
+                  <button type="button" class="btn btn-secondary">View</button>
+                  <button type="button" class="btn btn-secondary">Block</button>
+                  <button type="button" class="btn btn-secondary">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>List4</td>
+                <td>Brand4</td>
+                <td>Category4</td>
+                <td>rating4</td>
+                <td>
+                  <button type="button" class="btn btn-secondary">View</button>
+                  <button type="button" class="btn btn-secondary">Block</button>
+                  <button type="button" class="btn btn-secondary">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>List5</td>
+                <td>Brand5</td>
+                <td>Category5</td>
+                <td>rating5</td>
+                <td>
+                  <button type="button" class="btn btn-secondary">View</button>
+                  <button type="button" class="btn btn-secondary">Block</button>
+                  <button type="button" class="btn btn-secondary">Remove</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="nav-vendors" role="tabpanel" aria-labelledby="nav-vendors-tab">
+            <table>
+              <tr>
+                <th>Vendor Name</th>
+                <th>ID</th>
+                <th>Location</th>
+                <th>Contact</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>VN1</td>
+                <td>ID1</td>
+                <td>LOCATION1</td>
+                <td>CONTACT1</td>
+                <td>
+                  <button type="button" class="btn btn-secondary">View</button>
+                  <button type="button" class="btn btn-secondary">Block</button>
+                  <button type="button" class="btn btn-secondary">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>VN2</td>
+                <td>ID2</td>
+                <td>LOCATION2</td>
+                <td>CONTACT2</td>
+                <td>
+                  <button type="button" class="btn btn-secondary">View</button>
+                  <button type="button" class="btn btn-secondary">Block</button>
+                  <button type="button" class="btn btn-secondary">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>VN3</td>
+                <td>ID3</td>
+                <td>LOCATION3</td>
+                <td>CONTACT3</td>
+                <td>
+                  <button type="button" class="btn btn-secondary">View</button>
+                  <button type="button" class="btn btn-secondary">Block</button>
+                  <button type="button" class="btn btn-secondary">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>VN4</td>
+                <td>ID4</td>
+                <td>LOCATION4</td>
+                <td>CONTACT4</td>
+                <td>
+                  <button type="button" class="btn btn-secondary">View</button>
+                  <button type="button" class="btn btn-secondary">Block</button>
+                  <button type="button" class="btn btn-secondary">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>VN5</td>
+                <td>ID5</td>
+                <td>LOCATION5</td>
+                <td>CONTACT5</td>
+                <td>
+                  <button type="button" class="btn btn-secondary">View</button>
+                  <button type="button" class="btn btn-secondary">Block</button>
+                  <button type="button" class="btn btn-secondary">Remove</button>
+                </td>
+              </tr>
+              
+            </table>
+          </div>
+          <div class="tab-pane fade" id="nav-category" role="tabpanel" aria-labelledby="nav-category-tab">
+            <table>
+              <tr>
+                <th>Category</th>
+                  <th>Description</th>
+                  <th>Products</th>
+                  <th></th>
+              </tr>
+              <tr>
+                <td>category1</td>
+                <td>description1</td>
+                <td>product_cnt1</td>
+                <td>
+                  <button type="button" class="btn btn-secondary">Edit</button>
+                  <button type="button" class="btn btn-secondary">Block</button>
+                  <button type="button" class="btn btn-secondary">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>category2</td>
+                <td>description2</td>
+                <td>product_cnt2</td>
+                <td>
+                  <button type="button" class="btn btn-secondary">Edit</button>
+                  <button type="button" class="btn btn-secondary">Block</button>
+                  <button type="button" class="btn btn-secondary">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>category3</td>
+                <td>description3</td>
+                <td>product_cnt3</td>
+                <td>
+                  <button type="button" class="btn btn-secondary">Edit</button>
+                  <button type="button" class="btn btn-secondary">Block</button>
+                  <button type="button" class="btn btn-secondary">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>category4</td>
+                <td>description4</td>
+                <td>product_cnt4</td>
+                <td>
+                  <button type="button" class="btn btn-secondary">Edit</button>
+                  <button type="button" class="btn btn-secondary">Block</button>
+                  <button type="button" class="btn btn-secondary">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>category5</td>
+                <td>description5</td>
+                <td>product_cnt5</td>
+                <td>
+                  <button type="button" class="btn btn-secondary">Edit</button>
+                  <button type="button" class="btn btn-secondary">Block</button>
+                  <button type="button" class="btn btn-secondary">Remove</button>
+                </td>
+              </tr>
+              
+            </table>
+          </div>
+          
+        </div>
+      
+      
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- Tabs -->
+    </div>
+  </div>
+
+</div>
+                
+           
+        
+</body>
+
+</html>
